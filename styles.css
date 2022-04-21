@@ -318,6 +318,7 @@ Hero
   letter-spacing: var(--spacing);
   border-radius: var(--radius);
   transition: var(--transition);
+  font-family: 'Kaushan Script', cursive;
 }
 .hero-btn:hover {
   background: var(--clr-white);

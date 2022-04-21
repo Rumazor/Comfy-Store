@@ -14,7 +14,50 @@
     <title>Home | Comfy</title>
   </head>
   <body>
-    <h2>home page</h2>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <!-- LINKS -->
+        <div>
+          <button class="toggle-nav">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="product.html" class="nav-link">Products</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+        <!-- LOGO -->
+        <img src="./images/logo-white.svg" class="nav-logo" alt="logo">
+        <!-- CART ICON -->
+        <div class="toggle-container">
+          <button class="toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="cart-item-count">1</span>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-container">
+        <h1 class="text-slanted">
+          rest, relax, unwind
+        </h1>
+        <h3>Embrace your choices...</h3>
+        <a href="products.html" class="hero-btn">
+          Shop now!
+        </a>
+      </div>
+    </section>
+
     <script type="module" src="index.js"></script>
   </body>
 </html>
