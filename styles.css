@@ -261,7 +261,7 @@ Navbar
     margin-right: 3rem;
     letter-spacing: var(--spacing);
     transition: var(--transition);
-    font-size: 1.25rem;
+    font-size: 1.6rem;
   }
   .nav-link:hover {
     color: var(--clr-primary-5);
