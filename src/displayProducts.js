@@ -16,17 +16,25 @@ const display = (products,element) => {
             <a href="product.html?id=${id}" class="product-icon">
             <i class="fas fa-search"></i>
             </a>
-            <button class="product-cart-btn product-icon" data-id="1">
+            <button class="product-cart-btn product-icon" data-id="${id}">
             <i class="fas fa-shopping-cart"></i>
             </button>
         </div>
         </div>
         <footer>
         <p class="product-name">${name}</p>
-        <h4 class="product-price">${price / 100}</h4>
+        <h4 class="product-price">${formatPrice(price)}</h4>
         </footer>
     </article>`
     }).join('');
+
+    element.addEventListener('click',(e)=>{
+        const parent = e.target.parentElement
+        if(parent.classList.contains('product-cart-btn')){
+            addToCart(parent.dataset.id)
+        }
+    })
+
 };
 
 export default display;
