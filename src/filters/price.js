@@ -20,8 +20,9 @@ const setupPrice = (store) => {
         priceInput.addEventListener('input', ()=>{
             const value = parseInt(priceInput.value); // transformar a numeros los Strings
             priceValue.textContent = `Value: $${value}`;
-
+            
             let newStore = store.filter((product)=> product.price / 100 <= value)
+
             
             display(newStore,getElement('.products-container'))
 
