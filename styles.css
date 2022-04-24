@@ -98,7 +98,9 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  color: var(--clr-primary-5);
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -714,10 +716,10 @@ Products Page
     height: 10rem;
   }
   .products-container .product-name {
-    font-size: 0.85rem;
+    font-size: 1.2rem;
   }
   .products-container .product-price {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -743,7 +745,7 @@ Single Product Page
   display: grid;
   place-items: center;
   background: var(--clr-grey-10);
-  color: var(--clr-grey-5);
+  color: var(--clr-grey-2);
 }
 .page-hero-title {
   font-weight: 500;
@@ -763,10 +765,10 @@ Single Product Page
 }
 .single-product-company {
   font-size: 1.2rem;
-  color: var(--clr-grey-8);
+  color: var(--clr-primary-1);
   text-transform: uppercase;
   letter-spacing: var(--spacing);
-  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
 }
 .single-product-price {
   color: var(--clr-grey-3);
